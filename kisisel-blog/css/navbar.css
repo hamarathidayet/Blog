@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+	margin-left: 19%;
+}
+
+.navbar {
+	list-style-type: none;
+	background-color:#01172d;
+	width: 18%;
+	height: 100%;
+	position: fixed;
+	text-align: center;
+	left : 0;
+	top: 0;
+}
+.nav-item {
+	color :black;
+	list-style-type: none;
+	font-size: 20px;
+
+	margin-top: 1%;
+	float: left;
+
+	left: 0;
+}
+.nav-link {
+	color :white;
+	text-decoration: none;
+
+}
+
+.navbar-brand {
+	list-style-type: none;
+	color :black;		
+	font-size: 120%;		
+	text-transform: uppercase;
+	display: block;
+	float: right;
+	margin-right: 35%;
+	margin-bottom: 10%;		
+	font-size: 120%;
+	transition: 0.2s;
+
+
+}
+.navbar-brand-xs {
+	display: none;
+	text-decoration: none;
+	color: white;
+}
+.navbar-brand a {
+	color :white;
+
+}
+.nav-name {
+	display: inline-block;
+
+}
+.resim {
+	transition: 0.4s;
+	background-image: url("../arkaplan.jpg") ;
+	width: 100%;
+	background-repeat: none;
+	background-position: center;
+	background-size: 100%;
+	height: 300px;
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 20px;
+
+
+}
+
+.name {
+	margin-top: 5%;
+	font-size: 200%;
+	color: red;
+}
+.deger {
+	font-family: "Poppins", sans-serif;
+	color: white;
+}
+.invasable {
+	display: none;
+	margin-top: 7%;
+	float: right;
+	margin-right: 15%;
+}
+
+
+
+.nice:hover {
+	animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+	50% {transform: rotate(180deg);}
+}
+@media only screen and (max-width: 800px) {
+	.nav-name {
+		display: none;
+	}
+	.invasable {
+
+		margin-top: 7%;
+
+	}
+
+	.nice{
+		margin-top: 30%;
+
+	}
+	.navbar-brand-xs {
+		display: block;
+
+		float: right;
+		margin-right: 50%;
+		margin-bottom: 30%;
+
+		font-size: 120%;
+
+
+	}
+	.navbar {
+		text-align: center;
+	}
+	.navbar-brand-xs a {
+
+
+		top: 0;
+		color: white;
+
+		border-radius: 1%;
+		width: 100%;
+
+
+
+	}
+	.navbar-brand {
+		display: none;
+	}
+	.nav-item {
+		float: right;
+		margin-right: 35%;
+		background-color: white;
+		border-radius: 100%;
+		margin-top: 25%;
+		border: 1px solid white;
+		width: 50px;
+		height: 50px;
+	}
+	.resim {
+		background-size: 155%;
+	}
+	.name {
+		margin-top: 10%;
+		font-size: 200%;
+		color: red;
+	}
+	.nav-link {
+		color: black;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.resim {
+		height:200px;
+	}
+}

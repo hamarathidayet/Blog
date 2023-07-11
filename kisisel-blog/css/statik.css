@@ -1,0 +1,100 @@
+body {
+	background-color: #01172d;
+	
+	background-size: 100%;
+	background-position: center;
+}
+
+.night-light {
+	font-size: 30px;
+	background-color: black;
+}
+
+.note {
+	box-sizing: content-box;
+	transition: 0.2s;
+	width: 46%;
+	height: 400px;
+	border: 1px solid black;
+	margin-top: 5%;
+	border-radius: 100%;
+	text-align: center;
+	
+	padding-top: 5%;
+	display: inline-block;
+	margin-left: 3%;
+	font-size: 60px;
+	color: black;
+	background-image: url("../iletisim.jpg");
+	background-size: 600px;
+	background-repeat: none;
+	background-position: center;
+}
+
+.note:hover{
+	transition: 1s;
+	border-radius: ;
+	
+	display: 0;
+	background-image: none;
+	background-color: black;
+	color: white;
+	
+
+}
+
+.note:hover .note-name{
+
+	transition: 1s;
+	display: none;
+
+	
+
+}
+
+.note:hover .note-name-hover{
+	transition: 1s;
+	display: inline-block;
+	color: white;
+	font-size: 20px;
+
+
+}
+
+
+.note-name-hover{
+	transition: 1s;
+	display: none;
+}
+
+
+ .note:hover .note-link {
+ 	transition: 1s;
+	text-decoration: none;
+}
+@media only screen  and (max-width: 800px) {
+	.note {
+		height: 300px;
+		width: 100%;
+		font-size: 30px;
+		background-size: 200px;
+	}
+		.note-name-hover {
+		
+		font-size: 10px;
+
+}
+}
+
+@media only screen and (max-width: 400px) {
+	.note {
+		height: auto;;
+		width: 45%;
+		font-size: 20px;
+		background-size: 150px;
+	}
+	.note-name-hover {
+		
+		font-size: 10px;
+
+}
